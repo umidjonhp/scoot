@@ -33,7 +33,7 @@ export const Main = () => {
       {
         services.map((service) => {
           return (
-            <div className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'}`}>
+            <div key={service.id} className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'}`}>
               <div className="flex flex-col gap-6 items-start w-[47%]">
                 <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px]">{service.title}</h2>
                 <p className="text-dimGrey text-[15px] font-lexendDeca leading-[25px] mb-[16px] pr-[24px]">{service.info}</p>
