@@ -1,5 +1,14 @@
+import {
+  Hero,
+  Information,
+  Main,
+} from "../../components/pages/home-components";
 export const Home = () => {
   return (
-    <div>home</div>
+    <>
+      <Hero />
+      <Information />
+      <Main />
+    </>
   )
 }

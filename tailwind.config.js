@@ -16,6 +16,7 @@ export default {
         lightGrey: "#E5ECF4",
         snow: "#F2F5F9", 
         lightYellow: "#FFF4DF",
+        footerBg: "#333A44",
       },
       fontFamily: {
         spaceMono: "Space Mono",
