@@ -23,22 +23,22 @@ const OurValuesCardes = [
     photo: card3,
   },
 ];
-export const OurValues = () => {
+export const OurValues = ({componentName}) => {
   return (
-    <div className="container flex flex-col items-center justify-center gap-[103px] mb-[120px]">
-      <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px]">Our values</h2>
-      <div className="flex items-center gap-[30px]">
+    <div className="container flex flex-col items-center justify-center gap-[103px] mb-[120px] max-md:gap-[87px]">
+      <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px]">{componentName}</h2>
+      <div className="flex items-center gap-[30px] max-md:gap-[55px] max-md:flex-col">
         {
           OurValuesCardes.map((card) => {
             return (
-              <div className="flex flex-col items-center w-[33%]" key={card.id}>
+              <div className="flex flex-col items-center w-[33%] max-md:w-[75%]" key={card.id}>
                 <div className="w-60 h-60 rounded-[50%] overflow-hidden mb-[87px]">
                   <img src={card.photo} className="" />
                 </div>
                 <div className="flex  flex-col  gap-[27px] items-center relative">
                   <h4 className="text-darkNavy text-2xl font-bold font-spaceMono leading-7">{card.title}</h4>
                   <p className="text-dimGrey text-[15px] font-lexendDeca leading-[25px] text-center">{card.info}</p>
-                  <span className="w-24 h-24 rounded-[50%] p-[34px] -top-[101%] absolute bg-yellow flex items-center justify-center text-darkNavy text-2xl font-bold font-spaceMono leading-7">{card.id}</span> 
+                  <span className="w-24 h-24 rounded-[50%] p-[34px] -top-[101%] max-md:-top-[122%] absolute bg-yellow flex items-center justify-center text-darkNavy text-2xl font-bold font-spaceMono leading-7">{card.id}</span> 
                 </div>
               </div>
             )

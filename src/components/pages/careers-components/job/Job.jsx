@@ -34,11 +34,11 @@ const jobs = [
 ]
 export const Job = () => {
   return (
-    <div className="container flex flex-col gap-6 mb-40">
+    <div className="container flex flex-col gap-6 mb-40 max-md:mb-[120px] max-md:gap-4">
       {
         jobs.map((job) => {
           return(
-            <div className="bg-snow flex items-center justify-between pt-[32px] pb-[35px] pl-10 pr-16">
+            <div className="bg-snow flex items-center justify-between pt-[32px] pb-[35px] pl-10 pr-16 max-md:py-[33.5px] max-md:px-12">
               <div className="flex flex-col gap-2">
                 <h5 className="text-darkNavy text-2xl font-bold font-spaceMono leading-7">{job.position}</h5>
                 <span className="text-darkNavy text-[15px] font-lexendDeca leading-[25px]">{job.country}</span>

@@ -7,7 +7,7 @@ export const Careers = () => {
     <>
       <PagesTop img={bgImg} name={"Careers"} />
       <Card/>
-      <OurValues/>
+      <OurValues componentName={"Why join us?"}/>
       <Job/>
     </>
   )

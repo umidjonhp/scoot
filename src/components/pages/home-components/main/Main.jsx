@@ -29,14 +29,14 @@ const services = [
 ];
 export const Main = () => {
   return (
-    <div className="container flex flex-col gap-40 mb-[200px]">
+    <div className="container flex flex-col gap-40 mb-[200px] max-md:gap-32 max-md:mb-[104px]">
       {
         services.map((service) => {
           return (
-            <div key={service.id} className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'}`}>
-              <div className="flex flex-col gap-6 items-start w-[47%]">
-                <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px]">{service.title}</h2>
-                <p className="text-dimGrey text-[15px] font-lexendDeca leading-[25px] mb-[16px] pr-[24px]">{service.info}</p>
+            <div key={service.id} className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'} max-md:flex-col-reverse max-md:gap-14`}>
+              <div className="flex flex-col gap-6 items-start w-[47%] max-md:w-[85%] max-md:gap-10 max-md:items-center">
+                <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px] max-md:text-center max-md:w-[90%]">{service.title}</h2>
+                <p className="text-dimGrey text-[15px] font-lexendDeca leading-[25px] mb-[16px] pr-[24px] max-md:text-center">{service.info}</p>
                 <Button>Learn More</Button>
               </div>
               <div className="w-[445px] h-[445px] bg-zinc-300 rounded-full overflow-hidden">

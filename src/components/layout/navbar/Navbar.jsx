@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="container flex items-center justify-between">
-        <ul className="flex items-center gap-8 py-[34px]">
+        <ul className="flex items-center gap-8 py-[34px] max-md:py-[21px]">
           <li className="mr-[26px]">
             <NavLink to={"/"} >
               <img src={logo} alt="" />
@@ -33,7 +33,7 @@ export const Navbar = () => {
             pages.map((page) => {
               return (
                 <li key={page.id}>
-                  <NavLink to={page.adres} activeClassName="text-darkNavy text-[18px] ease-out duration-300" className="text-dimGrey text-[15px] font-bold font-spaceMono leading-[25px] ease-out duration-300" >
+                  <NavLink to={page.adres} activeClassName="text-darkNavy text-[18px] max-md:text-[16px] ease-out duration-300" className="text-dimGrey text-[15px] font-bold font-spaceMono leading-[25px] ease-out duration-300 md:text-[14px]" >
                     {page.name}
                   </NavLink>
                 </li>

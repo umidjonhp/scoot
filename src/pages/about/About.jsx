@@ -8,7 +8,7 @@ export const About = () => {
     <>
       <PagesTop img={bgImg} name={"About"} />
       <Card />
-      <OurValues />
+      <OurValues componentName={"Our values"}/>
       <Faqs />
     </>
   )

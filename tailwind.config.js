@@ -7,7 +7,12 @@ export default {
         center: true,
         screens: {
           xl: "1110px",
+          tablet: '690px',
+          mobile: "311px",
         },
+      },
+      screens: {
+        // tablet: '768px', 
       },
       colors: {
         yellow: "#FCB72B",

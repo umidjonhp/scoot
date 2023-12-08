@@ -53,23 +53,23 @@ export const Faqs = () => {
         fill="none"
         className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
       >
-        <path d="M2 11L10 3L18 11" stroke="#FCB72B" stroke-width="3" />
+        <path d="M2 11L10 3L18 11" stroke="#FCB72B" strokeWidth="3" />
       </svg>
     );
   }
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="container flex flex-col gap-16 mb-40  ">
+    <div className="container flex flex-col gap-16 mb-40  max-md:mb-[120px]">
       <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px] text-center">FAQs</h2>
-      <div className="flex  gap-[100px]">
+      <div className="flex  gap-[100px] max-md:flex-col max-md:items-center">
         <h3 className="text-darkNavy text-[40px] font-bold font-spaceMono leading-[48px]">How it works</h3>
-        <div className="w-[60%] flex flex-col gap-4">
+        <div className="w-[60%] flex flex-col gap-4 max-md:w-[100%]">
           {
             worksBase.map((acc) => {
               return (
-                <Accordion open={open === acc.id} icon={acardionHandler(acc.id, open)}>
-                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%] flex items-center justify-between py-8 px-[40px] bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7">{acc.title}</AccordionHeader>
+                <Accordion open={open === acc.id} icon={acardionHandler(acc.id, open)} key={acc.id}>
+                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%] flex items-center justify-between py-8 px-[40px] max-md:px-8 bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7 cursor-pointer hover:bg-lightYellow transition-all duration-200">{acc.title}</AccordionHeader>
                   <AccordionBody className="bg-snow px-[40px] pb-8 text-darkNavy text-[15px] font-lexendDeca leading-[25px]">
                     <span>{acc.info}</span>
                   </AccordionBody>
@@ -79,14 +79,14 @@ export const Faqs = () => {
           }
         </div>
       </div>
-      <div className="flex  gap-[100px]">
+      <div className="flex  gap-[100px] max-md:flex-col max-md:items-center">
         <h3 className="text-darkNavy text-[40px] font-bold font-spaceMono leading-[48px]">How it works</h3>
-        <div className="w-[60%] flex flex-col gap-4">
+        <div className="w-[60%] flex flex-col gap-4  max-md:w-[100%]">
           {
             drivingBase.map((acc) => {
               return (
-                <Accordion open={open === acc.id} icon={acardionHandler(acc.id, open)}>
-                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%] flex items-center justify-between py-8 px-[40px] bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7">{acc.title}</AccordionHeader>
+                <Accordion open={open === acc.id} icon={acardionHandler(acc.id, open)} key={acc.id}>
+                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%]  max-md:px-8 flex items-center justify-between py-8 px-[40px] bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7 cursor-pointer hover:bg-lightYellow transition-all duration-200">{acc.title}</AccordionHeader>
                   <AccordionBody className="bg-snow px-[40px] pb-8 text-darkNavy text-[15px] font-lexendDeca leading-[25px]">
                     <span>{acc.info}</span>
                   </AccordionBody>

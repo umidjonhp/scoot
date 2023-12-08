@@ -27,14 +27,14 @@ export const Footer = () => {
     <>
       <div>
         <div className="bg-darkNavy  overflow-hidden">
-          <div className="container flex items-center justify-between py-[102px] relative">
-            <h2 className="text-white text-5xl font-bold font-spaceMono leading-[48px]">Sign up and <br /> Scoot off today</h2>
+          <div className="container flex items-center justify-between py-[102px] relative max-md:py-[62px] max-md:flex-col max-md:gap-10">
+            <h2 className="text-white text-5xl font-bold font-spaceMono leading-[48px] max-md:text-center">Sign up and <br /> Scoot off today</h2>
             <span>
               <img src={companyLogo} alt="companyLogo" />
             </span>
-            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full border-8 border-lightGrey -bottom-[66%] right-[42%]"></span> 
-            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full border-8 border-lightGrey -bottom-[66%] right-[6%]"></span> 
-            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full  border-lightGrey bg-lightGrey -bottom-[66%] -right-[30%]"></span> 
+            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full border-8 border-lightGrey -bottom-[66%] right-[42%] max-md:-bottom-[55%]  max-md:right-[87%]"></span> 
+            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full border-8 border-lightGrey -bottom-[66%] right-[6%] max-md:-bottom-[55%] max-md:right-[30%]"></span> 
+            <span className="w-[347px] h-[347px]  absolute rotate-180 opacity-10 rounded-full  border-lightGrey bg-lightGrey -bottom-[66%] -right-[30%] max-md:-bottom-[55%] max-md:-right-[27%] "></span> 
           </div>
         </div>
         <div className="bg-footerBg py-[35px] z-10">
