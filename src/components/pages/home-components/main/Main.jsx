@@ -29,17 +29,17 @@ const services = [
 ];
 export const Main = () => {
   return (
-    <div className="container flex flex-col gap-40 mb-[200px] max-md:gap-32 max-md:mb-[104px]">
+    <div className="container flex flex-col gap-40 mb-[200px] max-md:gap-32 max-md:mb-[104px] max-mobile:gap-[120px]">
       {
         services.map((service) => {
           return (
-            <div key={service.id} className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'} max-md:flex-col-reverse max-md:gap-14`}>
-              <div className="flex flex-col gap-6 items-start w-[47%] max-md:w-[85%] max-md:gap-10 max-md:items-center">
-                <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px] max-md:text-center max-md:w-[90%]">{service.title}</h2>
+            <div key={service.id} className={`flex items-center gap-[220px] ${service.state ? 'flex-row' : 'flex-row-reverse'} max-md:flex-col-reverse max-md:gap-14 max-mobile:gap-8`}>
+              <div className="flex flex-col gap-6 items-start w-[47%] max-md:w-[85%] max-md:gap-10 max-md:items-center max-mobile:w-[100%]">
+                <h2 className="text-darkNavy text-5xl font-bold font-spaceMono leading-[48px] max-md:text-center max-md:w-[90%] max-mobile:w-[100%] max-mobile:text-[32px]">{service.title}</h2>
                 <p className="text-dimGrey text-[15px] font-lexendDeca leading-[25px] mb-[16px] pr-[24px] max-md:text-center">{service.info}</p>
                 <Button>Learn More</Button>
               </div>
-              <div className="w-[445px] h-[445px] bg-zinc-300 rounded-full overflow-hidden">
+              <div className="w-[445px] h-[445px] max-mobile:w-[311px] max-mobile:h-[311px] bg-zinc-300 rounded-full overflow-hidden">
                 <img src={service.photo} alt="" className="w-[100%] h-[100%]" />
               </div>
             </div>

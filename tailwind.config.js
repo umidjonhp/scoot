@@ -13,6 +13,7 @@ export default {
       },
       screens: {
         // tablet: '768px', 
+        mobile: "378px",
       },
       colors: {
         yellow: "#FCB72B",
@@ -22,6 +23,7 @@ export default {
         snow: "#F2F5F9", 
         lightYellow: "#FFF4DF",
         footerBg: "#333A44",
+        zinc: "#333A43",
       },
       fontFamily: {
         spaceMono: "Space Mono",

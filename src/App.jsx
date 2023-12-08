@@ -13,9 +13,9 @@ import {
 
 export const App = () => {
   return (
-    <>
+    <> 
+      <div className="relative">
       <Navbar />
-
       <Switch>
         <Route exact path='/'>
           <Home />
@@ -32,6 +32,7 @@ export const App = () => {
       </Switch>
 
       <Footer />
+      </div>
     </>
   )
 }
