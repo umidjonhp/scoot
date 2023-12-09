@@ -59,7 +59,7 @@ export const Navbar = () => {
           <NavLink to={"/"} >
             <img src={logo2} />
           </NavLink>
-          <div className={`bg-zinc pt-[64px] transition-all duration-700 pb-6 px-8 flex flex-col justify-between absolute  h-[89vh] z-50 ${isNavOpen ? `w-[80%]` : `w-0 -left-[100%]`} top-[100%] left-0 `}>
+          <div className={`bg-zinc pt-[64px] transition-all duration-1000 pb-6 px-8 flex flex-col justify-between absolute  h-[89vh] z-50 ${isNavOpen ? `w-[80%]` : `w-0 -left-[150%]`} top-[100%] left-0 `}>
             <ul className="flex flex-col gap-6">
               {
                 pages.map((page) => {
