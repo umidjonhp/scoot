@@ -86,8 +86,8 @@ export const Faqs = () => {
             drivingBase.map((acc) => {
               return (
                 <Accordion open={open === acc.id} icon={acardionHandler(acc.id, open)} key={acc.id}>
-                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%]  max-md:px-8 flex items-center justify-between py-8 px-[40px] bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7 cursor-pointer hover:bg-lightYellow transition-all duration-200">{acc.title}</AccordionHeader>
-                  <AccordionBody className="bg-snow px-[40px] pb-8 text-darkNavy text-[15px] font-lexendDeca leading-[25px]">
+                  <AccordionHeader onClick={() => handleOpen(acc.id)} className="w-[100%] flex items-center justify-between py-8 px-[40px] max-md:px-8 max-mobile:p-[32px] max-mobile:text-lg max-mobile:text-left bg-snow text-darkNavy text-2xl font-bold font-spaceMono leading-7 cursor-pointer hover:bg-lightYellow transition-all duration-200">{acc.title}</AccordionHeader>
+                  <AccordionBody className="bg-snow px-[40px] pt-[24px] pb-8 text-darkNavy text-[15px] font-lexendDeca leading-[25px]">
                     <span>{acc.info}</span>
                   </AccordionBody>
                 </Accordion>
